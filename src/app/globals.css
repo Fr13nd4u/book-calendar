@@ -40,6 +40,7 @@ html, body, #__next {
 body {
   @apply bg-main-bg bg-cover bg-center bg-no-repeat;
   background-image: url("/assets/images/BG_mob.png");
+  background-size: cover;
 
   @media (min-width: 768px) {
     background-image: url("/assets/images/BG.png");
