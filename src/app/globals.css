@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff;
+  --foreground: #16171B;
+  --main-bg: #E28F11;
+  --color-secondary-50: #AD5707;
+  --color-secondary-100: #FFAD32;
+  font-family: var(--font-poppins), sans-serif;
+  color: var(--foreground);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #16171B;
+  --color-secondary: #8F91A1;
+  --color-secondary-50: #AD5707;
+  --bg-gray-300: #DADBE8;
+  --color-secondary-100: #FFAD32;
+  --font-poppins: var(--font-poppins);
+  --font-kaisei-tokumin: var(--font-kaisei-tokumin);
+  --color-main-bg: var(--main-bg);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --gray-300: #DADBE8;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html, body, #__next {
+  height: 100%;
+  font-family: var(--font-poppins), sans-serif;
+
 }
+
+body {
+  @apply bg-main-bg bg-cover bg-center bg-no-repeat;
+  background-image: url("/assets/images/BG_mob.png");
+
+  @media (min-width: 768px) {
+    background-image: url("/assets/images/BG.png");
+  }
+}
+
+
+
