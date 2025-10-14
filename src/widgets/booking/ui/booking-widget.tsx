@@ -31,7 +31,7 @@ export const BookingWidget = () => {
     };
 
     return (
-        <div className="bg-background flex flex-col gap-8 md:gap-10 rounded-tl-2xl rounded-tr-2xl pt-8 px-5 pb-3 md:py-10 absolute bottom-0 md:static w-full md:max-w-[568px] md:rounded-lg md:mt-10 md:shadow-[0_20px_52px_0_rgba(0,0,0,0.25)]">
+        <div className="bg-background flex flex-col gap-8 md:gap-10 rounded-tl-2xl rounded-tr-2xl pt-8 px-5 pb-3 md:py-10 absolute bottom-0 md:static w-full md:max-w-[568px] md:rounded-lg md:my-10 md:shadow-[0_20px_22px_0_rgba(0,0,0,0.25)]">
             <BookASession />
             <DatePicker selectedDay={selection.day} onSelectDay={handleSelectDay} />
             <TimePicker
