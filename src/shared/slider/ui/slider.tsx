@@ -58,7 +58,7 @@ const Slider: FC<SliderProps> = ({ children, className, onClick }) => {
 
             <div
                 ref={containerRef}
-                className={`flex items-end max-w-106 overflow-x-auto scrollbar-hide gap-2 md:overflow-hidden scroll-smooth -mb-3 pb-3 ${className || ""}`}
+                className={`flex items-end md:max-w-106 overflow-x-auto scrollbar-hide gap-2 md:overflow-hidden scroll-smooth -mb-3 pb-3 ${className || ""}`}
                 onClick={onClick}
             >
                 {children}

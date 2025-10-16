@@ -1,15 +1,15 @@
 import React, {FC, useMemo, startTransition} from 'react';
-import {TimeItem} from "@/entities/ui";
-import {getTimeSlots} from "@/widgets/booking";
+import {TimeItem} from "@/shared/ui";
 import {Slider} from "@/shared/slider";
+import { getTimeSlots } from '../utils';
 
 interface TimePickerProps {
     selectedDay?: Date | null
-    selectedTime?: { label: string; timestamp: number }
+    selectedTime?: { label: string; timestamp: number } | null
     onSelectTime: (time: { label: string; timestamp: number }) => void;
 }
 
-const TimePicker:FC<TimePickerProps> = ({selectedDay, onSelectTime, selectedTime}) => {
+export const TimePicker:FC<TimePickerProps> = ({selectedDay, onSelectTime, selectedTime}) => {
     const times = useMemo(() => selectedDay ? getTimeSlots(selectedDay) : [], [selectedDay]);
 
     if (!selectedDay) return (
@@ -36,4 +36,3 @@ const TimePicker:FC<TimePickerProps> = ({selectedDay, onSelectTime, selectedTime
     );
 };
 
-export default TimePicker;

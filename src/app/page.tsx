@@ -1,11 +1,5 @@
-import { Header } from "@/shared/header";
-import {HomeView} from "@/views/home";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-      <>
-         <Header />
-         <HomeView />
-      </>
-  );
+  redirect("/booking");
 }
