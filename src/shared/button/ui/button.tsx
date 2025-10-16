@@ -1,4 +1,4 @@
-import {FC, ReactNode, ButtonHTMLAttributes} from 'react';
+import {FC, ReactNode, ButtonHTMLAttributes, memo} from 'react';
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -23,4 +23,4 @@ const Button: FC<ButtonProps> = ({ children, disabled, className, ...rest }) => 
     );
 };
 
-export default Button;
+export default memo(Button);

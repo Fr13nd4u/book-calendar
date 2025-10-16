@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {memo} from 'react';
 import Image from "next/image";
 
-export const BookASession = () => {
+export const BookASession = memo(() => {
   return (
     <div className="flex items-center gap-5 md:pl-13 md:pr-6.75 mb-8 md:mb-10">
       <Image className="hidden md:block w-30 h-30" src={"/assets/images/book-a-session.png"} width={120} height={120} alt="book a session" />
@@ -12,5 +12,5 @@ export const BookASession = () => {
 
     </div>
   );
-};
+});
 

@@ -1,6 +1,6 @@
 "use client"
 
-import React, {FC, MouseEvent, useMemo} from 'react';
+import React, {FC, MouseEvent, useMemo, memo} from 'react';
 import {DateItem} from "@/shared/ui";
 import {Slider} from "@/shared/slider";
 import { getNextDates } from '../utils';
@@ -10,7 +10,7 @@ interface DatePickerProps {
     onSelectDay: (day: Date) => void;
 }
 
-export const DatePicker:FC<DatePickerProps> = ({selectedDay, onSelectDay}) => {
+export const DatePicker:FC<DatePickerProps> = memo(({selectedDay, onSelectDay}) => {
     const dates = useMemo(() => getNextDates(), []);
 
     const handleSelect = (e: MouseEvent<HTMLDivElement>) => {
@@ -31,5 +31,5 @@ export const DatePicker:FC<DatePickerProps> = ({selectedDay, onSelectDay}) => {
             )}
         </Slider>
     );
-};
+})
 

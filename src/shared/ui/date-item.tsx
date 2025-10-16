@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React, {FC, memo} from 'react';
 import {twMerge} from "tailwind-merge";
 
 interface DateItemProps {
@@ -27,4 +27,4 @@ const DateItem:FC<DateItemProps> = ({day, month, weekDay, edgeOfMonth, isSelecte
     );
 };
 
-export default DateItem;
+export default memo(DateItem);

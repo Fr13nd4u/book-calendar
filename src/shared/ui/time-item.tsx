@@ -1,4 +1,4 @@
-import React, {FC, MouseEventHandler} from 'react';
+import React, {FC, MouseEventHandler, memo} from 'react';
 import {twMerge} from "tailwind-merge";
 
 interface TimeItemProps {
@@ -20,4 +20,4 @@ const TimeItem:FC<TimeItemProps> = ({isSelected, time, onClick}) => {
     );
 };
 
-export default TimeItem;
+export default memo(TimeItem);
