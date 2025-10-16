@@ -9,8 +9,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button: FC<ButtonProps> = ({ children, disabled, className, ...rest }) => {
     const baseClasses = `w-full py-3 rounded-full font-medium text-white transition cursor-pointer font-semibold text-[16px]`;
     const stateClasses = disabled
-        ? "bg-[var(--bg-gray-300)] cursor-not-allowed"
-        : "bg-[var(--color-primary)] hover:bg-gray-800";
+        ? "bg-gray-300 cursor-not-allowed"
+        : "bg-primary hover:bg-gray-800";
 
     return (
         <button

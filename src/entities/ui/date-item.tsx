@@ -13,10 +13,10 @@ interface DateItemProps {
 const DateItem:FC<DateItemProps> = ({day, month, weekDay, edgeOfMonth, isSelected, fullDate}) => {
     return (
         <div className="flex flex-col gap-1">
-            {edgeOfMonth && <span className="text-[#8F91A1] text-[14px]">{month}</span>}
+            {edgeOfMonth && <span className="text-secondary text-[14px]">{month}</span>}
             <div className={
-                twMerge("flex flex-col items-center justify-center w-16 h-16 rounded-[8px] border border-[#E8EBF4] cursor-pointer",
-                isSelected ? "bg-[#E8EBF4] text-[#DE3A6B] text-[16px]" : "text-primary text-[14px]"
+                twMerge("flex flex-col items-center justify-center w-16 h-16 rounded-[8px] border border-gray cursor-pointer",
+                isSelected ? "bg-gray text-pink text-[16px]" : "text-primary text-[14px]"
                 )}
                  data-date={fullDate}
             >

@@ -53,7 +53,7 @@ const Slider: FC<SliderProps> = ({ children, className, onClick }) => {
                 onClick={() => handleSlide("left")}
                 className="hidden md:flex md:static md:h-10 md:w-10 items-center justify-center w-6 h-6 mr-3"
             >
-                <ChevronLeft  className={twMerge("w-6 h-6 text-primary", isAtStart ? "text-[#C0C1D1]" : "cursor-pointer")} />
+                <ChevronLeft  className={twMerge("w-6 h-6 text-primary", isAtStart ? "text-gray-100" : "cursor-pointer")} />
             </button>
 
             <div
@@ -71,7 +71,7 @@ const Slider: FC<SliderProps> = ({ children, className, onClick }) => {
                 onClick={() => handleSlide("right")}
                 className="hidden md:flex md:static md:h-10 md:w-10 items-center justify-center w-6 h-6 ml-3"
             >
-                <ChevronRight className={twMerge("w-6 h-6 text-primary", isAtEnd ? "text-[#C0C1D1]" : "cursor-pointer")} />
+                <ChevronRight className={twMerge("w-6 h-6 text-primary", isAtEnd ? "text-gray-100" : "cursor-pointer")} />
             </button>
         </div>
     );

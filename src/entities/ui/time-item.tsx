@@ -10,8 +10,8 @@ interface TimeItemProps {
 const TimeItem:FC<TimeItemProps> = ({isSelected, time, onClick}) => {
     return (
         <div className={
-            twMerge("flex flex-col items-center justify-center py-3 px-4 whitespace-nowrap w-20.25 h-11.25 rounded-[100px] border border-[#E8EBF4] cursor-pointer text-[14px]",
-                isSelected ? "bg-[#E8EBF4] text-[#DE3A6B]" : "text-primary"
+            twMerge("flex flex-col items-center justify-center py-3 px-4 whitespace-nowrap w-20.25 h-11.25 rounded-[100px] border border-gray cursor-pointer text-[14px]",
+                isSelected ? "bg-gray text-pink" : "text-primary"
             )}
             onClick={onClick}
         >
