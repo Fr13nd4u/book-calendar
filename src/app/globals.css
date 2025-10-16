@@ -23,14 +23,6 @@
   --color-main-bg: var(--main-bg);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --gray-300: #DADBE8;
-  }
-}
-
 html, body, #__next {
   height: 100%;
   font-family: var(--font-poppins), sans-serif;
@@ -38,7 +30,7 @@ html, body, #__next {
 }
 
 body {
-  background: linear-gradient(45deg, rgba(170, 88, 13, 1) 0%, rgba(226, 143, 17, 1) 47%, rgba(170, 88, 13, 1) 100%);
+  background: linear-gradient(40deg, rgba(170, 88, 13, 1) 0%, rgba(226, 143, 17, 1) 47%, rgba(170, 88, 13, 1) 100%);
 
 }
 
