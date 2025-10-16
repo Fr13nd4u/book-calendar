@@ -38,13 +38,8 @@ html, body, #__next {
 }
 
 body {
-  @apply bg-main-bg bg-cover bg-center bg-no-repeat;
-  background-image: url("/assets/images/BG_mob.png");
-  background-size: cover;
+  background: linear-gradient(45deg, rgba(170, 88, 13, 1) 0%, rgba(226, 143, 17, 1) 47%, rgba(170, 88, 13, 1) 100%);
 
-  @media (min-width: 768px) {
-    background-image: url("/assets/images/BG.png");
-  }
 }
 
 
